@@ -6,6 +6,7 @@ return {
         -- custom_gruvbox.normal.c.bg = '#112233'
         require("lualine").setup({
             options = {
+                icons_enabled = false,
                 theme = "gruvbox",
             },
         })
