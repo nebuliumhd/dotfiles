@@ -3,10 +3,8 @@ return {
     lazy = false,
     priority = 1000,
     -- Config is called after the plugin loads
-    config = function()
-        require("bamboo").setup({
-            -- Optional stuff
-        })
+    config = function ()
+        require("bamboo").setup({})
         require("bamboo").load()
-    end,
+    end
 }
