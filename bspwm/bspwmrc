@@ -19,7 +19,9 @@ bspc config gapless_monocle      true
 picom --config "${HOME}"/.config/picom/picom.conf &
 ~/.fehbg &
 dunst &
-polybar &
+$HOME/.config/polybar/launch.sh &
 
 # Create floating windows
 alacritty --hold --class NF,NF -e bash -c "fastfetch; bash" &
+alacritty --hold --class NF,NF -e bash -c "~/Scripts/Terminal/peaclock --config ~/.peaclock/config/default; bash" &
+alacritty --hold --class NF,NF -e bash -c "~/Scripts/Terminal/pipes.sh; bash" &
