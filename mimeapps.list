@@ -1,0 +1,5 @@
+[Default Applications]
+application/x-compressed-tar=org.pulseaudio.pavucontrol.desktop
+
+[Added Associations]
+application/x-compressed-tar=org.pulseaudio.pavucontrol.desktop;

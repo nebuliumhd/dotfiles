@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d I II III IV V
 
 bspc config border_width         2
 bspc config window_gap          12
@@ -22,6 +22,6 @@ dunst &
 $HOME/.config/polybar/launch.sh &
 
 # Create floating windows
-alacritty --hold --class NF,NF -e bash -c "fastfetch; bash" &
-alacritty --hold --class NF,NF -e bash -c "~/Scripts/Terminal/peaclock --config ~/.peaclock/config/default; bash" &
-alacritty --hold --class NF,NF -e bash -c "~/Scripts/Terminal/pipes.sh; bash" &
+alacritty --hold --class NF,NF -e bash -c "fastfetch; ~/Scripts/Terminal/color.sh; bash" & sleep 0.1 && bspc node --follow
+alacritty --hold --class NF,NF -e bash -c "~/Scripts/Terminal/peaclock --config ~/.peaclock/config/default; bash" & sleep 0.1 && bspc node --follow
+alacritty --hold --class NF,NF -e bash -c "~/Scripts/Terminal/pipes.sh; sudo ntpdate pool.ntp.org; bash" & sleep 0.1 && bspc node --follow

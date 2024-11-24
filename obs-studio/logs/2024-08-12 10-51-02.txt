@@ -1,0 +1,125 @@
+10:51:02.667: Using EGL/X11
+10:51:02.668: CPU Name: Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz
+10:51:02.668: CPU Speed: 4599.465MHz
+10:51:02.668: Physical Cores: 8, Logical Cores: 8
+10:51:02.668: Physical Memory: 31971MB Total, 28568MB Free
+10:51:02.668: Kernel Version: Linux 6.10.3-arch1-2
+10:51:02.668: Distribution: "Arch Linux" Unknown
+10:51:02.668: Session Type: tty
+10:51:02.668: Window System: X11.0, Vendor: The X.Org Foundation, Version: 1.21.1
+10:51:02.668: Qt Version: 6.7.2 (runtime), 6.7.2 (compiled)
+10:51:02.668: Portable mode: false
+10:51:02.692: OBS 30.2.1-1 (linux)
+10:51:02.692: ---------------------------------
+10:51:02.692: ---------------------------------
+10:51:02.692: audio settings reset:
+10:51:02.692: 	samples per sec: 48000
+10:51:02.692: 	speakers:        2
+10:51:02.692: 	max buffering:   960 milliseconds
+10:51:02.692: 	buffering type:  dynamically increasing
+10:51:02.697: ---------------------------------
+10:51:02.697: Initializing OpenGL...
+10:51:02.765: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce GTX 1660 Ti/PCIe/SSE2
+10:51:02.765: OpenGL loaded successfully, version 3.3.0 NVIDIA 555.58.02, shading language 3.30 NVIDIA via Cg compiler
+10:51:02.874: ---------------------------------
+10:51:02.874: video settings reset:
+10:51:02.874: 	base resolution:   1920x1080
+10:51:02.874: 	output resolution: 1280x720
+10:51:02.874: 	downscale filter:  Bicubic
+10:51:02.874: 	fps:               30/1
+10:51:02.874: 	format:            NV12
+10:51:02.874: 	YUV mode:          Rec. 709/Partial
+10:51:02.874: NV12 texture support enabled
+10:51:02.874: P010 texture support not available
+10:51:02.875: Audio monitoring device:
+10:51:02.875: 	name: Default
+10:51:02.875: 	id: default
+10:51:02.875: ---------------------------------
+10:51:02.880: Failed to load 'en-US' text for module: 'decklink-captions.so'
+10:51:02.886: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+10:51:02.890: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+10:51:02.890: Failed to initialize module 'decklink.so'
+10:51:03.026: [pipewire] No capture sources available
+10:51:03.038: v4l2loopback not installed, virtual camera not registered
+10:51:03.113: NVENC supported
+10:51:03.113: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+10:51:03.113: FFmpeg VAAPI H264 encoding not supported
+10:51:03.113: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+10:51:03.113: FFmpeg VAAPI AV1 encoding not supported
+10:51:03.113: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+10:51:03.113: FFmpeg VAAPI HEVC encoding not supported
+10:51:03.121: os_dlopen(/usr/lib/obs-plugins/obs-libfdk.so->/usr/lib/obs-plugins/obs-libfdk.so): libfdk-aac.so.2: cannot open shared object file: No such file or directory
+10:51:03.121: 
+10:51:03.122: os_dlopen(/usr/lib/obs-plugins/obs-libfdk.so->/usr/lib/obs-plugins/obs-libfdk.so): libfdk-aac.so.2: cannot open shared object file: No such file or directory
+10:51:03.122: 
+10:51:03.122: Module '/usr/lib/obs-plugins/obs-libfdk.so' not loaded
+10:51:03.176: ---------------------------------
+10:51:03.176:   Loaded Modules:
+10:51:03.176:     text-freetype2.so
+10:51:03.176:     rtmp-services.so
+10:51:03.176:     obs-x264.so
+10:51:03.176:     obs-webrtc.so
+10:51:03.176:     obs-vst.so
+10:51:03.176:     obs-transitions.so
+10:51:03.176:     obs-qsv11.so
+10:51:03.176:     obs-outputs.so
+10:51:03.176:     obs-filters.so
+10:51:03.176:     obs-ffmpeg.so
+10:51:03.176:     linux-v4l2.so
+10:51:03.176:     linux-pulseaudio.so
+10:51:03.176:     linux-pipewire.so
+10:51:03.177:     linux-jack.so
+10:51:03.177:     linux-capture.so
+10:51:03.177:     linux-alsa.so
+10:51:03.177:     image-source.so
+10:51:03.177:     frontend-tools.so
+10:51:03.177:     decklink-output-ui.so
+10:51:03.177:     decklink-captions.so
+10:51:03.177: ---------------------------------
+10:51:03.177: ---------------------------------
+10:51:03.177: Available Encoders:
+10:51:03.177:   Video Encoders:
+10:51:03.177: 	- ffmpeg_svt_av1 (SVT-AV1)
+10:51:03.177: 	- ffmpeg_aom_av1 (AOM AV1)
+10:51:03.177: 	- jim_nvenc (NVIDIA NVENC H.264)
+10:51:03.177: 	- jim_hevc_nvenc (NVIDIA NVENC HEVC)
+10:51:03.177: 	- jim_av1_nvenc (NVIDIA NVENC AV1)
+10:51:03.177: 	- obs_x264 (x264)
+10:51:03.177:   Audio Encoders:
+10:51:03.177: 	- ffmpeg_aac (FFmpeg AAC)
+10:51:03.177: 	- ffmpeg_opus (FFmpeg Opus)
+10:51:03.177: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+10:51:03.177: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+10:51:03.177: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+10:51:03.177: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+10:51:03.177: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+10:51:03.177: ==== Startup complete ===============================================
+10:51:03.180: No scene file found, creating default scene
+10:51:03.226: All scene data cleared
+10:51:03.226: ------------------------------------------------
+10:51:03.232: pulse-input: Server name: 'pulseaudio 17.0'
+10:51:03.233: pulse-input: Audio format: s16le, 44100 Hz, 2 channels
+10:51:03.233: pulse-input: Started recording from 'alsa_output.pci-0000_01_00.1.hdmi-stereo.monitor' (default)
+10:51:03.234: Switched to scene 'Scene'
+10:51:03.234: Failed to glob scene collections
+10:51:03.307: [rtmp-services plugin] Successfully updated file 'services.json' (version 258)
+10:51:03.307: [rtmp-services plugin] Successfully updated package (version 258)
+10:51:18.023: 
+10:51:18.023: ==== Auto-config wizard testing commencing ======
+
+10:51:19.326: Number of remaining views: 1
+10:51:19.326: ---------------------------------
+10:51:19.326: video settings reset:
+10:51:19.326: 	base resolution:   2560x1440
+10:51:19.326: 	output resolution: 1920x1080
+10:51:19.326: 	downscale filter:  Bicubic
+10:51:19.326: 	fps:               60/1
+10:51:19.326: 	format:            NV12
+10:51:19.326: 	YUV mode:          Rec. 709/Partial
+10:51:19.326: NV12 texture support enabled
+10:51:19.326: P010 texture support not available
+10:51:19.329: 
+10:51:19.329: ==== Auto-config wizard testing stopping ========
+
+10:52:02.665: xshm-input: Geometry 2560x1440 @ 0,0
+10:52:02.675: User added source 'Display Capture (XSHM)' (xshm_input) to scene 'Scene'
