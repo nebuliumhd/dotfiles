@@ -46,7 +46,12 @@ return {
         end
 
         -- Keybinds
-        vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, {})
-        vim.keymap.set("n", "<Leader>dc", dap.continue, {})
+        vim.keymap.set("n", "<Leader>db", dap.toggle_breakpoint, {})
+        vim.keymap.set("n", "<Leader>dl", dap.list_breakpoints, {})
+        vim.keymap.set("n", "<Leader>ui", dapui.toggle, {})
+        vim.keymap.set("n", "<F5>", dap.continue, {})
+        vim.keymap.set("n", "<F10>", dap.step_over, {})
+        vim.keymap.set("n", "<F11>", dap.step_into, {})
+        vim.keymap.set("n", "<F12>", dap.step_out, {})
     end,
 }

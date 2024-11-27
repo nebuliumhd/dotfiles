@@ -11,9 +11,43 @@ return {
     },
     {
         "hrsh7th/nvim-cmp",
+        dependencies = {
+            "onsails/lspkind.nvim",
+        },
         config = function()
             local cmp = require("cmp")
+            local lspkind = require("lspkind")
             require("luasnip.loaders.from_vscode").lazy_load()
+
+            lspkind.init({
+                symbol_map = {
+                    Text = " ",
+                    Method = "󰆧 ",
+                    Function = "󰆧 ",
+                    Constructor = " ",
+                    Field = " ",
+                    Variable = " ",
+                    Class = " ",
+                    Interface = " ",
+                    Module = " ",
+                    Property = " ",
+                    Unit = " ",
+                    Value = "󰎠 ",
+                    Enum = " ",
+                    Keyword = " ",
+                    Snippet = " ",
+                    Color = " ",
+                    File = " ",
+                    Reference = " ",
+                    Folder = " ",
+                    EnumMember = " ",
+                    Constant = " ",
+                    Struct = " ",
+                    Event = " ",
+                    Operator = " ",
+                    TypeParameter = " ",
+                },
+            })
 
             cmp.setup({
                 snippet = {
@@ -23,7 +57,11 @@ return {
                     end,
                 },
                 window = {
-                    completion = cmp.config.window.bordered(),
+                    completion = {
+                        max_height = 10,
+                        max_width = 50,
+                        cmp.config.window.bordered(),
+                    },
                     documentation = cmp.config.window.bordered(),
                 },
                 mapping = cmp.mapping.preset.insert({
@@ -39,6 +77,17 @@ return {
                 }, {
                     { name = "buffer" },
                 }),
+                formatting = {
+                    format = lspkind.cmp_format({
+                        with_text = true, -- Show text alongside icons
+                        maxwidth = 50, -- Maximum width for completion items
+                        menu = {
+                            buffer = "[Buffer]",
+                            nvim_lsp = "[LSP]",
+                            nvim_lua = "[Lua]",
+                        },
+                    }),
+                },
             })
         end,
     },
