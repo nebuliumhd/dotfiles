@@ -17,6 +17,7 @@ bspc config gapless_monocle      true
 # Auto Start 
 # sxhkd & // Already ran at top of the script
 picom --config "${HOME}"/.config/picom/picom.conf &
+redshift -l 40:74 &
 ~/.fehbg &
 dunst &
 $HOME/.config/polybar/launch.sh &
